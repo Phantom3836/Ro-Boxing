@@ -1,6 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -19,6 +16,7 @@ local HideLbl = Instance.new("TextLabel")
 local BGImgLbl = Instance.new("ImageLabel")
 
 --Properties:
+
 ScreenGui.Parent = game:GetService("CoreGui")
 
 MainFrame.Name = "MainFrame"
@@ -155,6 +153,7 @@ local function YBVZ_fake_script() -- ToggleBtn1.LocalScript
 	local script = Instance.new('LocalScript', ToggleBtn1)
 
 	script.Parent.MouseButton1Click:connect(function(player)
+		if script.Parent.Parent.ToggleBtn1.Image == "rbxassetid://8956771769" then
 			script.Parent.Parent.ToggleBtn1.Image = "rbxassetid://8956771421"
 	
 			while script.Parent.Parent.ToggleBtn1.Image == "rbxassetid://8956771421" and wait() do
@@ -277,8 +276,3 @@ local function WULND_fake_script() -- MainFrame.ToggleGUI
 	end
 	
 	game:GetService("UserInputService").InputBegan:connect(onKeyPress)
-	
-	
-	
-end
-coroutine.wrap(WULND_fake_script)()
