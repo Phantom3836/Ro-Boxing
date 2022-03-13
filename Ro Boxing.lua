@@ -19,8 +19,7 @@ local HideLbl = Instance.new("TextLabel")
 local BGImgLbl = Instance.new("ImageLabel")
 
 --Properties:
-
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game:GetService("CoreGui")
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
@@ -156,7 +155,6 @@ local function YBVZ_fake_script() -- ToggleBtn1.LocalScript
 	local script = Instance.new('LocalScript', ToggleBtn1)
 
 	script.Parent.MouseButton1Click:connect(function(player)
-		if script.Parent.Parent.ToggleBtn1.Image == "rbxassetid://8956771769" then
 			script.Parent.Parent.ToggleBtn1.Image = "rbxassetid://8956771421"
 	
 			while script.Parent.Parent.ToggleBtn1.Image == "rbxassetid://8956771421" and wait() do
@@ -268,7 +266,7 @@ local function WULND_fake_script() -- MainFrame.ToggleGUI
 	local script = Instance.new('LocalScript', MainFrame)
 
 	function onKeyPress(inputObject, gameProcessedEvent)
-		local Frame = script.Parent.Parent.Frame
+		local Frame = MainFrame
 		if inputObject.KeyCode == Enum.KeyCode.K then
 			if Frame.Visible == false then
 				Frame.Visible = true
