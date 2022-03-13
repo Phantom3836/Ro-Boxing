@@ -17,7 +17,7 @@ local BGImgLbl = Instance.new("ImageLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game:GetService("CoreGui")
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
@@ -265,7 +265,7 @@ local function WULND_fake_script() -- MainFrame.ToggleGUI
 	local script = Instance.new('LocalScript', MainFrame)
 
 	function onKeyPress(inputObject, gameProcessedEvent)
-		local Frame = script.Parent.Parent.Frame
+		local Frame = MainFrame
 		if inputObject.KeyCode == Enum.KeyCode.K then
 			if Frame.Visible == false then
 				Frame.Visible = true
