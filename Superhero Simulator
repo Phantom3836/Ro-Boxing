@@ -1,0 +1,1585 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ImgBG = Instance.new("ImageLabel")
+local TitleLbl = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local FlyingLbl = Instance.new("TextLabel")
+local DoubleSpaceLbl = Instance.new("TextLabel")
+local AutoTrainFrame = Instance.new("Frame")
+local Auto = Instance.new("TextLabel")
+local StrengthToggleBtn = Instance.new("ImageButton")
+local EnduranceLbl = Instance.new("TextLabel")
+local AutoAgilityToggleBtn = Instance.new("ImageButton")
+local Agility = Instance.new("TextLabel")
+local EnduranceLbl_2 = Instance.new("TextLabel")
+local QuestsSFrame = Instance.new("ScrollingFrame")
+local SuperBoyBtn = Instance.new("TextButton")
+local TempestBtn = Instance.new("TextButton")
+local ScorchBtn = Instance.new("TextButton")
+local CrystalBtn = Instance.new("TextButton")
+local ImpulseBtn = Instance.new("TextButton")
+local FarmerJoeBtn = Instance.new("TextButton")
+local EthanCaveBtn = Instance.new("TextButton")
+local FlyToggleBtn = Instance.new("ImageButton")
+local AutoTrainBtn = Instance.new("TextButton")
+local ChestsBtn = Instance.new("TextButton")
+local NPCBtn = Instance.new("TextButton")
+local SafeZoneBtn = Instance.new("TextButton")
+local TrainingLocationsBtn = Instance.new("TextButton")
+local TrainingFrames = Instance.new("Folder")
+local PsychicLocationsSFrame = Instance.new("ScrollingFrame")
+local LibraryBtn = Instance.new("TextButton")
+local CampFireBtn = Instance.new("TextButton")
+local WisdomTree2Btn = Instance.new("TextButton")
+local WisdomTreeBtn = Instance.new("TextButton")
+local LightHouseBtn = Instance.new("TextButton")
+local FountainBtn = Instance.new("TextButton")
+local WaterfallBtn = Instance.new("TextButton")
+local StrengthLocationsSFrame = Instance.new("ScrollingFrame")
+local RockBtn = Instance.new("TextButton")
+local Meteor1Btn = Instance.new("TextButton")
+local Meteor2Btn = Instance.new("TextButton")
+local CrystalsBtn = Instance.new("TextButton")
+local FerrisWheelBtn = Instance.new("TextButton")
+local VanBtn = Instance.new("TextButton")
+local EnchantedCrystalBtn = Instance.new("TextButton")
+local SatelliteBtn = Instance.new("TextButton")
+local CraneBtn = Instance.new("TextButton")
+local GrandHammerBtn = Instance.new("TextButton")
+local EnduranceLocationsSFrame = Instance.new("ScrollingFrame")
+local RadioactiveMeteorBtn = Instance.new("TextButton")
+local SharksBtn = Instance.new("TextButton")
+local SmokePipesBtn = Instance.new("TextButton")
+local MoltenPoolBtn = Instance.new("TextButton")
+local RockBtn_2 = Instance.new("TextButton")
+local AncientPillarsBtn = Instance.new("TextButton")
+local AgilityLocationTypesFrame = Instance.new("Frame")
+local TrampolineBtn = Instance.new("TextButton")
+local VentsBtn = Instance.new("TextButton")
+local TrainingLocationTypesFrame = Instance.new("Frame")
+local StrengthBtn = Instance.new("TextButton")
+local EnduranceBtn = Instance.new("TextButton")
+local PsychicForceBtn = Instance.new("TextButton")
+local SwiftnessBtn = Instance.new("TextButton")
+local AgilityBtn = Instance.new("TextButton")
+local SwiftnessLocationTypesFrame = Instance.new("Frame")
+local TreadmillBtn = Instance.new("TextButton")
+local ChestFrame = Instance.new("Frame")
+local DailyChestBtn = Instance.new("TextButton")
+local GroupChestBtn = Instance.new("TextButton")
+local CaveChestBtn = Instance.new("TextButton")
+local InfoBtn = Instance.new("ImageButton")
+local InfoFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game:GetService("CoreGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImgBG.Name = "ImgBG"
+ImgBG.Parent = ScreenGui
+ImgBG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImgBG.Size = UDim2.new(0, 620, 0, 450)
+ImgBG.Image = "rbxassetid://9028179829"
+ImgBG.ImageTransparency = 0.400
+ImgBG.ScaleType = Enum.ScaleType.Crop
+
+TitleLbl.Name = "TitleLbl"
+TitleLbl.Parent = ImgBG
+TitleLbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleLbl.BackgroundTransparency = 1.000
+TitleLbl.BorderSizePixel = 0
+TitleLbl.Position = UDim2.new(0.099999994, 0, 0.0222222228, 0)
+TitleLbl.Size = UDim2.new(0, 412, 0, 50)
+TitleLbl.Font = Enum.Font.SourceSans
+TitleLbl.Text = "Superhero Simulator"
+TitleLbl.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleLbl.TextSize = 50.000
+
+ImageLabel.Parent = ImgBG
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.738709688, 0, 0.0133333337, 0)
+ImageLabel.Size = UDim2.new(0, 66, 0, 58)
+ImageLabel.Image = "rbxassetid://9096568157"
+
+FlyingLbl.Name = "FlyingLbl"
+FlyingLbl.Parent = ImgBG
+FlyingLbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlyingLbl.BackgroundTransparency = 1.000
+FlyingLbl.Position = UDim2.new(0, 0, 0.813333333, 0)
+FlyingLbl.Size = UDim2.new(0, 174, 0, 50)
+FlyingLbl.Font = Enum.Font.Fondamento
+FlyingLbl.Text = "Enable Flying"
+FlyingLbl.TextColor3 = Color3.fromRGB(0, 0, 0)
+FlyingLbl.TextSize = 34.000
+
+DoubleSpaceLbl.Name = "DoubleSpaceLbl"
+DoubleSpaceLbl.Parent = ImgBG
+DoubleSpaceLbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DoubleSpaceLbl.BackgroundTransparency = 1.000
+DoubleSpaceLbl.Position = UDim2.new(0, 0, 0.862222254, 0)
+DoubleSpaceLbl.Size = UDim2.new(0, 174, 0, 50)
+DoubleSpaceLbl.Font = Enum.Font.Fondamento
+DoubleSpaceLbl.Text = "(Double Space Bar To Fly)"
+DoubleSpaceLbl.TextColor3 = Color3.fromRGB(0, 0, 0)
+DoubleSpaceLbl.TextSize = 19.000
+
+AutoTrainFrame.Name = "AutoTrainFrame"
+AutoTrainFrame.Parent = ImgBG
+AutoTrainFrame.Active = true
+AutoTrainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoTrainFrame.BackgroundTransparency = 1.000
+AutoTrainFrame.Position = UDim2.new(0.53031528, 0, 0.235555559, 0)
+AutoTrainFrame.Size = UDim2.new(0, 266, 0, 310)
+
+Auto.Name = "Auto"
+Auto.Parent = AutoTrainFrame
+Auto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Auto.BackgroundTransparency = 1.000
+Auto.Position = UDim2.new(0.210526317, 0, -0.0032258064, 0)
+Auto.Size = UDim2.new(0, 116, 0, 50)
+Auto.Font = Enum.Font.Fondamento
+Auto.Text = "Power"
+Auto.TextColor3 = Color3.fromRGB(0, 0, 0)
+Auto.TextSize = 34.000
+
+StrengthToggleBtn.Name = "StrengthToggleBtn"
+StrengthToggleBtn.Parent = AutoTrainFrame
+StrengthToggleBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StrengthToggleBtn.BackgroundTransparency = 1.000
+StrengthToggleBtn.Position = UDim2.new(0.664818048, 0, 0.0283431634, 0)
+StrengthToggleBtn.Size = UDim2.new(0, 82, 0, 34)
+StrengthToggleBtn.Image = "rbxassetid://9028127855"
+
+EnduranceLbl.Name = "EnduranceLbl"
+EnduranceLbl.Parent = AutoTrainFrame
+EnduranceLbl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnduranceLbl.BackgroundTransparency = 1.000
+EnduranceLbl.Position = UDim2.new(0.210526317, 0, 0.160453275, 0)
+EnduranceLbl.Size = UDim2.new(0, 176, 0, 50)
+EnduranceLbl.Font = Enum.Font.Fondamento
+EnduranceLbl.Text = "(select power to begin)"
+EnduranceLbl.TextColor3 = Color3.fromRGB(0, 0, 0)
+EnduranceLbl.TextSize = 34.000
+
+AutoAgilityToggleBtn.Name = "AutoAgilityToggleBtn"
+AutoAgilityToggleBtn.Parent = AutoTrainFrame
+AutoAgilityToggleBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoAgilityToggleBtn.BackgroundTransparency = 1.000
+AutoAgilityToggleBtn.Position = UDim2.new(0.664818048, 0, 0.42189157, 0)
+AutoAgilityToggleBtn.Size = UDim2.new(0, 82, 0, 34)
+AutoAgilityToggleBtn.Image = "rbxassetid://9028127855"
+
+Agility.Name = "Agility"
+Agility.Parent = AutoTrainFrame
+Agility.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Agility.BackgroundTransparency = 1.000
+Agility.Position = UDim2.new(0.210526317, 0, 0.393548399, 0)
+Agility.Size = UDim2.new(0, 116, 0, 50)
+Agility.Font = Enum.Font.Fondamento
+Agility.Text = "Agility"
+Agility.TextColor3 = Color3.fromRGB(0, 0, 0)
+Agility.TextSize = 34.000
+
+EnduranceLbl_2.Name = "EnduranceLbl"
+EnduranceLbl_2.Parent = AutoTrainFrame
+EnduranceLbl_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnduranceLbl_2.BackgroundTransparency = 1.000
+EnduranceLbl_2.Position = UDim2.new(0.210526317, 0, 0.524969399, 0)
+EnduranceLbl_2.Size = UDim2.new(0, 176, 0, 50)
+EnduranceLbl_2.Font = Enum.Font.Fondamento
+EnduranceLbl_2.Text = "(Double space bar  to stop)"
+EnduranceLbl_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+EnduranceLbl_2.TextSize = 28.000
+
+QuestsSFrame.Name = "QuestsSFrame"
+QuestsSFrame.Parent = ImgBG
+QuestsSFrame.Active = true
+QuestsSFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+QuestsSFrame.BackgroundTransparency = 1.000
+QuestsSFrame.Position = UDim2.new(0.497978956, 0, 0.235555559, 0)
+QuestsSFrame.Size = UDim2.new(0, 311, 0, 316)
+QuestsSFrame.Visible = false
+
+SuperBoyBtn.Name = "SuperBoyBtn"
+SuperBoyBtn.Parent = QuestsSFrame
+SuperBoyBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SuperBoyBtn.BackgroundTransparency = 1.000
+SuperBoyBtn.Position = UDim2.new(0.00321543217, 0, -0.00111107156, 0)
+SuperBoyBtn.Size = UDim2.new(0, 296, 0, 50)
+SuperBoyBtn.Font = Enum.Font.Fondamento
+SuperBoyBtn.Text = "Superboy"
+SuperBoyBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+SuperBoyBtn.TextSize = 34.000
+
+TempestBtn.Name = "TempestBtn"
+TempestBtn.Parent = QuestsSFrame
+TempestBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TempestBtn.BackgroundTransparency = 1.000
+TempestBtn.Position = UDim2.new(0.00321543217, 0, 0.0555555969, 0)
+TempestBtn.Size = UDim2.new(0, 296, 0, 50)
+TempestBtn.Font = Enum.Font.Fondamento
+TempestBtn.Text = "Tempest"
+TempestBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+TempestBtn.TextSize = 34.000
+
+ScorchBtn.Name = "ScorchBtn"
+ScorchBtn.Parent = QuestsSFrame
+ScorchBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScorchBtn.BackgroundTransparency = 1.000
+ScorchBtn.Position = UDim2.new(0.00321543217, 0, 0.111111149, 0)
+ScorchBtn.Size = UDim2.new(0, 296, 0, 50)
+ScorchBtn.Font = Enum.Font.Fondamento
+ScorchBtn.Text = "Scorch"
+ScorchBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScorchBtn.TextSize = 34.000
+
+CrystalBtn.Name = "CrystalBtn"
+CrystalBtn.Parent = QuestsSFrame
+CrystalBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CrystalBtn.BackgroundTransparency = 1.000
+CrystalBtn.Position = UDim2.new(0.00321543217, 0, 0.165555596, 0)
+CrystalBtn.Size = UDim2.new(0, 296, 0, 50)
+CrystalBtn.Font = Enum.Font.Fondamento
+CrystalBtn.Text = "Crystal"
+CrystalBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+CrystalBtn.TextSize = 34.000
+
+ImpulseBtn.Name = "ImpulseBtn"
+ImpulseBtn.Parent = QuestsSFrame
+ImpulseBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImpulseBtn.BackgroundTransparency = 1.000
+ImpulseBtn.Position = UDim2.new(0.00321543217, 0, 0.222222269, 0)
+ImpulseBtn.Size = UDim2.new(0, 296, 0, 50)
+ImpulseBtn.Font = Enum.Font.Fondamento
+ImpulseBtn.Text = "Impulse (QuickSpeed)"
+ImpulseBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+ImpulseBtn.TextSize = 34.000
+
+FarmerJoeBtn.Name = "FarmerJoeBtn"
+FarmerJoeBtn.Parent = QuestsSFrame
+FarmerJoeBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FarmerJoeBtn.BackgroundTransparency = 1.000
+FarmerJoeBtn.Position = UDim2.new(0.00321543217, 0, 0.276666701, 0)
+FarmerJoeBtn.Size = UDim2.new(0, 296, 0, 50)
+FarmerJoeBtn.Font = Enum.Font.Fondamento
+FarmerJoeBtn.Text = "Farmer Joe"
+FarmerJoeBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+FarmerJoeBtn.TextSize = 34.000
+
+EthanCaveBtn.Name = "EthanCaveBtn"
+EthanCaveBtn.Parent = QuestsSFrame
+EthanCaveBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EthanCaveBtn.BackgroundTransparency = 1.000
+EthanCaveBtn.Position = UDim2.new(0.00321543217, 0, 0.333333373, 0)
+EthanCaveBtn.Size = UDim2.new(0, 296, 0, 50)
+EthanCaveBtn.Font = Enum.Font.Fondamento
+EthanCaveBtn.Text = "Ethan Cave Miner"
+EthanCaveBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+EthanCaveBtn.TextSize = 34.000
+
+FlyToggleBtn.Name = "FlyToggleBtn"
+FlyToggleBtn.Parent = ImgBG
+FlyToggleBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlyToggleBtn.BackgroundTransparency = 1.000
+FlyToggleBtn.Position = UDim2.new(0.280645162, 0, 0.831111073, 0)
+FlyToggleBtn.Size = UDim2.new(0, 82, 0, 34)
+FlyToggleBtn.ZIndex = 2
+FlyToggleBtn.Image = "rbxassetid://9099770965"
+
+AutoTrainBtn.Name = "AutoTrainBtn"
+AutoTrainBtn.Parent = ImgBG
+AutoTrainBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoTrainBtn.BackgroundTransparency = 1.000
+AutoTrainBtn.BorderSizePixel = 11
+AutoTrainBtn.Position = UDim2.new(0, 0, 0.235555544, 0)
+AutoTrainBtn.Size = UDim2.new(0, 283, 0, 50)
+AutoTrainBtn.Font = Enum.Font.Fondamento
+AutoTrainBtn.Text = "Auto Train"
+AutoTrainBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoTrainBtn.TextSize = 34.000
+
+ChestsBtn.Name = "ChestsBtn"
+ChestsBtn.Parent = ImgBG
+ChestsBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChestsBtn.BackgroundTransparency = 1.000
+ChestsBtn.BorderSizePixel = 11
+ChestsBtn.Position = UDim2.new(0, 0, 0.457777798, 0)
+ChestsBtn.Size = UDim2.new(0, 272, 0, 50)
+ChestsBtn.Font = Enum.Font.Fondamento
+ChestsBtn.Text = "Chests"
+ChestsBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChestsBtn.TextSize = 34.000
+
+NPCBtn.Name = "NPCBtn"
+NPCBtn.Parent = ImgBG
+NPCBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NPCBtn.BackgroundTransparency = 1.000
+NPCBtn.BorderSizePixel = 11
+NPCBtn.Position = UDim2.new(0, 0, 0.568888903, 0)
+NPCBtn.Size = UDim2.new(0, 272, 0, 50)
+NPCBtn.Font = Enum.Font.Fondamento
+NPCBtn.Text = "Quest NPC's"
+NPCBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+NPCBtn.TextSize = 34.000
+
+SafeZoneBtn.Name = "SafeZoneBtn"
+SafeZoneBtn.Parent = ImgBG
+SafeZoneBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SafeZoneBtn.BackgroundTransparency = 1.000
+SafeZoneBtn.BorderSizePixel = 11
+SafeZoneBtn.Position = UDim2.new(0, 0, 0.682222188, 0)
+SafeZoneBtn.Size = UDim2.new(0, 272, 0, 50)
+SafeZoneBtn.Font = Enum.Font.Fondamento
+SafeZoneBtn.Text = "Safe Zone"
+SafeZoneBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+SafeZoneBtn.TextSize = 34.000
+
+TrainingLocationsBtn.Name = "TrainingLocationsBtn"
+TrainingLocationsBtn.Parent = ImgBG
+TrainingLocationsBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TrainingLocationsBtn.BackgroundTransparency = 1.000
+TrainingLocationsBtn.BorderSizePixel = 11
+TrainingLocationsBtn.Position = UDim2.new(0.0177419353, 0, 0.346666664, 0)
+TrainingLocationsBtn.Size = UDim2.new(0, 272, 0, 50)
+TrainingLocationsBtn.Font = Enum.Font.Fondamento
+TrainingLocationsBtn.Text = "Training Locations"
+TrainingLocationsBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+TrainingLocationsBtn.TextSize = 34.000
+
+TrainingFrames.Name = "TrainingFrames"
+TrainingFrames.Parent = ImgBG
+
+PsychicLocationsSFrame.Name = "PsychicLocationsSFrame"
+PsychicLocationsSFrame.Parent = TrainingFrames
+PsychicLocationsSFrame.Active = true
+PsychicLocationsSFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PsychicLocationsSFrame.BackgroundTransparency = 1.000
+PsychicLocationsSFrame.Position = UDim2.new(0.497978956, 0, 0.235555559, 0)
+PsychicLocationsSFrame.Size = UDim2.new(0, 311, 0, 316)
+PsychicLocationsSFrame.SizeConstraint = Enum.SizeConstraint.RelativeYY
+PsychicLocationsSFrame.Visible = false
+PsychicLocationsSFrame.ZIndex = 4
+
+LibraryBtn.Name = "LibraryBtn"
+LibraryBtn.Parent = PsychicLocationsSFrame
+LibraryBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LibraryBtn.BackgroundTransparency = 1.000
+LibraryBtn.Position = UDim2.new(0.00643086806, 0, 0.104444459, 0)
+LibraryBtn.Size = UDim2.new(0, 296, 0, 50)
+LibraryBtn.Font = Enum.Font.Fondamento
+LibraryBtn.Text = "Library (Req 10K)"
+LibraryBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+LibraryBtn.TextSize = 34.000
+
+CampFireBtn.Name = "CampFireBtn"
+CampFireBtn.Parent = PsychicLocationsSFrame
+CampFireBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CampFireBtn.BackgroundTransparency = 1.000
+CampFireBtn.Position = UDim2.new(0.00643086806, 0, 0.202222243, 0)
+CampFireBtn.Size = UDim2.new(0, 296, 0, 50)
+CampFireBtn.Font = Enum.Font.Fondamento
+CampFireBtn.Text = "Camp Fire (Req. 500M)"
+CampFireBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+CampFireBtn.TextSize = 34.000
+
+WisdomTree2Btn.Name = "WisdomTree2Btn"
+WisdomTree2Btn.Parent = PsychicLocationsSFrame
+WisdomTree2Btn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WisdomTree2Btn.BackgroundTransparency = 1.000
+WisdomTree2Btn.Position = UDim2.new(0.00643086806, 0, 0.25111112, 0)
+WisdomTree2Btn.Size = UDim2.new(0, 296, 0, 50)
+WisdomTree2Btn.Font = Enum.Font.Fondamento
+WisdomTree2Btn.Text = "Wisdom Tree (Req. ???)"
+WisdomTree2Btn.TextColor3 = Color3.fromRGB(0, 0, 0)
+WisdomTree2Btn.TextSize = 34.000
+
+WisdomTreeBtn.Name = "WisdomTreeBtn"
+WisdomTreeBtn.Parent = PsychicLocationsSFrame
+WisdomTreeBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WisdomTreeBtn.BackgroundTransparency = 1.000
+WisdomTreeBtn.Position = UDim2.new(0.00643086806, 0, 0.0555555485, 0)
+WisdomTreeBtn.Size = UDim2.new(0, 296, 0, 50)
+WisdomTreeBtn.Font = Enum.Font.Fondamento
+WisdomTreeBtn.Text = "Wisdom Tree (Req. 1K)"
+WisdomTreeBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+WisdomTreeBtn.TextSize = 34.000
+
+LightHouseBtn.Name = "LightHouseBtn"
+LightHouseBtn.Parent = PsychicLocationsSFrame
+LightHouseBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LightHouseBtn.BackgroundTransparency = 1.000
+LightHouseBtn.Position = UDim2.new(0.00643084757, 0, 0.146666691, 0)
+LightHouseBtn.Size = UDim2.new(0, 296, 0, 50)
+LightHouseBtn.Font = Enum.Font.Fondamento
+LightHouseBtn.Text = "Light House (Req. 5M)"
+LightHouseBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+LightHouseBtn.TextSize = 34.000
+
+FountainBtn.Name = "FountainBtn"
+FountainBtn.Parent = PsychicLocationsSFrame
+FountainBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FountainBtn.BackgroundTransparency = 1.000
+FountainBtn.Position = UDim2.new(0.00643086433, 0, 0, 0)
+FountainBtn.Size = UDim2.new(0, 296, 0, 50)
+FountainBtn.Font = Enum.Font.Fondamento
+FountainBtn.Text = "Fountain (Req 1K)"
+FountainBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+FountainBtn.TextSize = 34.000
+FountainBtn.TextWrapped = true
+
+WaterfallBtn.Name = "WaterfallBtn"
+WaterfallBtn.Parent = PsychicLocationsSFrame
+WaterfallBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WaterfallBtn.BackgroundTransparency = 1.000
+WaterfallBtn.Position = UDim2.new(0.00643086806, 0, 0.297777802, 0)
+WaterfallBtn.Size = UDim2.new(0, 296, 0, 50)
+WaterfallBtn.Font = Enum.Font.Fondamento
+WaterfallBtn.Text = "Waterfall (Req. ???)"
+WaterfallBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+WaterfallBtn.TextSize = 34.000
+
+StrengthLocationsSFrame.Name = "StrengthLocationsSFrame"
+StrengthLocationsSFrame.Parent = TrainingFrames
+StrengthLocationsSFrame.Active = true
+StrengthLocationsSFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StrengthLocationsSFrame.BackgroundTransparency = 1.000
+StrengthLocationsSFrame.Position = UDim2.new(0.497978956, 0, 0.235555559, 0)
+StrengthLocationsSFrame.Size = UDim2.new(0, 311, 0, 316)
+StrengthLocationsSFrame.SizeConstraint = Enum.SizeConstraint.RelativeYY
+StrengthLocationsSFrame.Visible = false
+StrengthLocationsSFrame.ZIndex = 4
+
+RockBtn.Name = "RockBtn"
+RockBtn.Parent = StrengthLocationsSFrame
+RockBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RockBtn.BackgroundTransparency = 1.000
+RockBtn.BorderColor3 = Color3.fromRGB(27, 42, 53)
+RockBtn.BorderSizePixel = 3
+RockBtn.Position = UDim2.new(0.00643087178, 0, -9.31322575e-10, 0)
+RockBtn.Size = UDim2.new(0, 296, 0, 50)
+RockBtn.Font = Enum.Font.Fondamento
+RockBtn.Text = "Rock (Req. 0)"
+RockBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+RockBtn.TextSize = 37.000
+
+Meteor1Btn.Name = "Meteor1Btn"
+Meteor1Btn.Parent = StrengthLocationsSFrame
+Meteor1Btn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Meteor1Btn.BackgroundTransparency = 1.000
+Meteor1Btn.Position = UDim2.new(0.00643086806, 0, 0.0555555671, 0)
+Meteor1Btn.Size = UDim2.new(0, 296, 0, 50)
+Meteor1Btn.Font = Enum.Font.Fondamento
+Meteor1Btn.Text = "Meteor 1 (Req. 1K)"
+Meteor1Btn.TextColor3 = Color3.fromRGB(0, 0, 0)
+Meteor1Btn.TextSize = 34.000
+
+Meteor2Btn.Name = "Meteor2Btn"
+Meteor2Btn.Parent = StrengthLocationsSFrame
+Meteor2Btn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Meteor2Btn.BackgroundTransparency = 1.000
+Meteor2Btn.Position = UDim2.new(0.00643086806, 0, 0.111111127, 0)
+Meteor2Btn.Size = UDim2.new(0, 296, 0, 50)
+Meteor2Btn.Font = Enum.Font.Fondamento
+Meteor2Btn.Text = "Meteor 2 (Req. 1K)"
+Meteor2Btn.TextColor3 = Color3.fromRGB(0, 0, 0)
+Meteor2Btn.TextSize = 34.000
+
+CrystalsBtn.Name = "CrystalsBtn"
+CrystalsBtn.Parent = StrengthLocationsSFrame
+CrystalsBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CrystalsBtn.BackgroundTransparency = 1.000
+CrystalsBtn.Position = UDim2.new(0.00643086806, 0, 0.166666687, 0)
+CrystalsBtn.Size = UDim2.new(0, 296, 0, 50)
+CrystalsBtn.Font = Enum.Font.Fondamento
+CrystalsBtn.Text = "Crystals (Req. 1K)"
+CrystalsBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+CrystalsBtn.TextSize = 34.000
+
+FerrisWheelBtn.Name = "FerrisWheelBtn"
+FerrisWheelBtn.Parent = StrengthLocationsSFrame
+FerrisWheelBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FerrisWheelBtn.BackgroundTransparency = 1.000
+FerrisWheelBtn.Position = UDim2.new(0.00643086806, 0, 0.223333344, 0)
+FerrisWheelBtn.Size = UDim2.new(0, 296, 0, 50)
+FerrisWheelBtn.Font = Enum.Font.Fondamento
+FerrisWheelBtn.Text = "Ferris Wheel (Req. 10K)"
+FerrisWheelBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+FerrisWheelBtn.TextSize = 34.000
+
+VanBtn.Name = "VanBtn"
+VanBtn.Parent = StrengthLocationsSFrame
+VanBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VanBtn.BackgroundTransparency = 1.000
+VanBtn.Position = UDim2.new(0.00643086806, 0, 0.271111131, 0)
+VanBtn.Size = UDim2.new(0, 296, 0, 50)
+VanBtn.Font = Enum.Font.Fondamento
+VanBtn.Text = "Van (Req. 100K)"
+VanBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+VanBtn.TextSize = 34.000
+
+EnchantedCrystalBtn.Name = "EnchantedCrystalBtn"
+EnchantedCrystalBtn.Parent = StrengthLocationsSFrame
+EnchantedCrystalBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnchantedCrystalBtn.BackgroundTransparency = 1.000
+EnchantedCrystalBtn.Position = UDim2.new(0.00643086806, 0, 0.319999993, 0)
+EnchantedCrystalBtn.Size = UDim2.new(0, 296, 0, 50)
+EnchantedCrystalBtn.Font = Enum.Font.Fondamento
+EnchantedCrystalBtn.Text = "Enchanted Crystal (Req.5m)"
+EnchantedCrystalBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+EnchantedCrystalBtn.TextSize = 32.000
+
+SatelliteBtn.Name = "SatelliteBtn"
+SatelliteBtn.Parent = StrengthLocationsSFrame
+SatelliteBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SatelliteBtn.BackgroundTransparency = 1.000
+SatelliteBtn.Position = UDim2.new(-0.0192926042, 0, 0.431111127, 0)
+SatelliteBtn.Size = UDim2.new(0, 296, 0, 50)
+SatelliteBtn.Font = Enum.Font.Fondamento
+SatelliteBtn.Text = "Satellite (Req. 50B)"
+SatelliteBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+SatelliteBtn.TextSize = 34.000
+
+CraneBtn.Name = "CraneBtn"
+CraneBtn.Parent = StrengthLocationsSFrame
+CraneBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CraneBtn.BackgroundTransparency = 1.000
+CraneBtn.Position = UDim2.new(-0.0192926228, 0, 0.375555575, 0)
+CraneBtn.Size = UDim2.new(0, 296, 0, 50)
+CraneBtn.Font = Enum.Font.Fondamento
+CraneBtn.Text = "Crane (Req. 500M)"
+CraneBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+CraneBtn.TextSize = 34.000
+
+GrandHammerBtn.Name = "GrandHammerBtn"
+GrandHammerBtn.Parent = StrengthLocationsSFrame
+GrandHammerBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GrandHammerBtn.BackgroundTransparency = 1.000
+GrandHammerBtn.Position = UDim2.new(-0.0192926042, 0, 0.482222229, 0)
+GrandHammerBtn.Size = UDim2.new(0, 296, 0, 50)
+GrandHammerBtn.Font = Enum.Font.Fondamento
+GrandHammerBtn.Text = "Grand Hammer (Req. 50T)"
+GrandHammerBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+GrandHammerBtn.TextSize = 32.000
+
+EnduranceLocationsSFrame.Name = "EnduranceLocationsSFrame"
+EnduranceLocationsSFrame.Parent = TrainingFrames
+EnduranceLocationsSFrame.Active = true
+EnduranceLocationsSFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnduranceLocationsSFrame.BackgroundTransparency = 1.000
+EnduranceLocationsSFrame.Position = UDim2.new(0.497978956, 0, 0.235555559, 0)
+EnduranceLocationsSFrame.Size = UDim2.new(0, 311, 0, 316)
+EnduranceLocationsSFrame.SizeConstraint = Enum.SizeConstraint.RelativeYY
+EnduranceLocationsSFrame.Visible = false
+EnduranceLocationsSFrame.ZIndex = 4
+
+RadioactiveMeteorBtn.Name = "RadioactiveMeteorBtn"
+RadioactiveMeteorBtn.Parent = EnduranceLocationsSFrame
+RadioactiveMeteorBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RadioactiveMeteorBtn.BackgroundTransparency = 1.000
+RadioactiveMeteorBtn.Position = UDim2.new(0.00643086806, 0, 0.270000011, 0)
+RadioactiveMeteorBtn.Size = UDim2.new(0, 296, 0, 50)
+RadioactiveMeteorBtn.Font = Enum.Font.Fondamento
+RadioactiveMeteorBtn.Text = "Radioactive Meteor (Req. 5M)"
+RadioactiveMeteorBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+RadioactiveMeteorBtn.TextSize = 28.000
+
+SharksBtn.Name = "SharksBtn"
+SharksBtn.Parent = EnduranceLocationsSFrame
+SharksBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SharksBtn.BackgroundTransparency = 1.000
+SharksBtn.Position = UDim2.new(0.00643086806, 0, 0.0555555746, 0)
+SharksBtn.Size = UDim2.new(0, 296, 0, 50)
+SharksBtn.Font = Enum.Font.Fondamento
+SharksBtn.Text = "Sharks (Req. 10K)"
+SharksBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+SharksBtn.TextSize = 34.000
+
+SmokePipesBtn.Name = "SmokePipesBtn"
+SmokePipesBtn.Parent = EnduranceLocationsSFrame
+SmokePipesBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SmokePipesBtn.BackgroundTransparency = 1.000
+SmokePipesBtn.Position = UDim2.new(0.00643086806, 0, 0.166666672, 0)
+SmokePipesBtn.Size = UDim2.new(0, 296, 0, 50)
+SmokePipesBtn.Font = Enum.Font.Fondamento
+SmokePipesBtn.Text = "Smoke Pipes (Req. 5M)"
+SmokePipesBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+SmokePipesBtn.TextSize = 34.000
+
+MoltenPoolBtn.Name = "MoltenPoolBtn"
+MoltenPoolBtn.Parent = EnduranceLocationsSFrame
+MoltenPoolBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MoltenPoolBtn.BackgroundTransparency = 1.000
+MoltenPoolBtn.Position = UDim2.new(0.00643086806, 0, 0.111111104, 0)
+MoltenPoolBtn.Size = UDim2.new(0, 296, 0, 50)
+MoltenPoolBtn.Font = Enum.Font.Fondamento
+MoltenPoolBtn.Text = "Molten Pool (Req. 100K)"
+MoltenPoolBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+MoltenPoolBtn.TextSize = 32.000
+
+RockBtn_2.Name = "RockBtn"
+RockBtn_2.Parent = EnduranceLocationsSFrame
+RockBtn_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RockBtn_2.BackgroundTransparency = 1.000
+RockBtn_2.Position = UDim2.new(0.04823149, 0, 2.23517418e-08, 0)
+RockBtn_2.Size = UDim2.new(0, 296, 0, 50)
+RockBtn_2.Font = Enum.Font.Fondamento
+RockBtn_2.Text = "Rock Zone (Req. 1K)"
+RockBtn_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+RockBtn_2.TextSize = 34.000
+
+AncientPillarsBtn.Name = "AncientPillarsBtn"
+AncientPillarsBtn.Parent = EnduranceLocationsSFrame
+AncientPillarsBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AncientPillarsBtn.BackgroundTransparency = 1.000
+AncientPillarsBtn.Position = UDim2.new(0.00643086433, 0, 0.222222224, 0)
+AncientPillarsBtn.Size = UDim2.new(0, 296, 0, 50)
+AncientPillarsBtn.Font = Enum.Font.Fondamento
+AncientPillarsBtn.Text = "Ancient Pillars (Req. 5M)"
+AncientPillarsBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+AncientPillarsBtn.TextSize = 32.000
+
+AgilityLocationTypesFrame.Name = "AgilityLocationTypesFrame"
+AgilityLocationTypesFrame.Parent = TrainingFrames
+AgilityLocationTypesFrame.Active = true
+AgilityLocationTypesFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AgilityLocationTypesFrame.BackgroundTransparency = 1.000
+AgilityLocationTypesFrame.Position = UDim2.new(0.5, 0, 0.235555559, 0)
+AgilityLocationTypesFrame.Size = UDim2.new(0, 310, 0, 316)
+AgilityLocationTypesFrame.Visible = false
+
+TrampolineBtn.Name = "TrampolineBtn"
+TrampolineBtn.Parent = AgilityLocationTypesFrame
+TrampolineBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TrampolineBtn.BackgroundTransparency = 1.000
+TrampolineBtn.Size = UDim2.new(0, 284, 0, 50)
+TrampolineBtn.Font = Enum.Font.Fondamento
+TrampolineBtn.Text = "Trampoline (Req. 10K)"
+TrampolineBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+TrampolineBtn.TextSize = 34.000
+
+VentsBtn.Name = "VentsBtn"
+VentsBtn.Parent = AgilityLocationTypesFrame
+VentsBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VentsBtn.BackgroundTransparency = 1.000
+VentsBtn.Position = UDim2.new(0, 0, 0.158227846, 0)
+VentsBtn.Size = UDim2.new(0, 284, 0, 50)
+VentsBtn.Font = Enum.Font.Fondamento
+VentsBtn.Text = "Vents (Req. 100K)"
+VentsBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+VentsBtn.TextSize = 34.000
+
+TrainingLocationTypesFrame.Name = "TrainingLocationTypesFrame"
+TrainingLocationTypesFrame.Parent = TrainingFrames
+TrainingLocationTypesFrame.Active = true
+TrainingLocationTypesFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TrainingLocationTypesFrame.BackgroundTransparency = 1.000
+TrainingLocationTypesFrame.Position = UDim2.new(0.5, 0, 0.235555559, 0)
+TrainingLocationTypesFrame.Size = UDim2.new(0, 310, 0, 316)
+TrainingLocationTypesFrame.Visible = false
+
+StrengthBtn.Name = "StrengthBtn"
+StrengthBtn.Parent = TrainingLocationTypesFrame
+StrengthBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StrengthBtn.BackgroundTransparency = 1.000
+StrengthBtn.Size = UDim2.new(0, 284, 0, 50)
+StrengthBtn.Font = Enum.Font.Fondamento
+StrengthBtn.Text = "Strength"
+StrengthBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+StrengthBtn.TextSize = 34.000
+
+EnduranceBtn.Name = "EnduranceBtn"
+EnduranceBtn.Parent = TrainingLocationTypesFrame
+EnduranceBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EnduranceBtn.BackgroundTransparency = 1.000
+EnduranceBtn.Position = UDim2.new(0, 0, 0.158227846, 0)
+EnduranceBtn.Size = UDim2.new(0, 284, 0, 50)
+EnduranceBtn.Font = Enum.Font.Fondamento
+EnduranceBtn.Text = "Endurance"
+EnduranceBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+EnduranceBtn.TextSize = 34.000
+
+PsychicForceBtn.Name = "PsychicForceBtn"
+PsychicForceBtn.Parent = TrainingLocationTypesFrame
+PsychicForceBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PsychicForceBtn.BackgroundTransparency = 1.000
+PsychicForceBtn.Position = UDim2.new(0, 0, 0.316455692, 0)
+PsychicForceBtn.Size = UDim2.new(0, 284, 0, 50)
+PsychicForceBtn.Font = Enum.Font.Fondamento
+PsychicForceBtn.Text = "Psychic Force"
+PsychicForceBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+PsychicForceBtn.TextSize = 34.000
+
+SwiftnessBtn.Name = "SwiftnessBtn"
+SwiftnessBtn.Parent = TrainingLocationTypesFrame
+SwiftnessBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SwiftnessBtn.BackgroundTransparency = 1.000
+SwiftnessBtn.Position = UDim2.new(0, 0, 0.474683523, 0)
+SwiftnessBtn.Size = UDim2.new(0, 284, 0, 50)
+SwiftnessBtn.Font = Enum.Font.Fondamento
+SwiftnessBtn.Text = "Swiftness"
+SwiftnessBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+SwiftnessBtn.TextSize = 34.000
+
+AgilityBtn.Name = "AgilityBtn"
+AgilityBtn.Parent = TrainingLocationTypesFrame
+AgilityBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AgilityBtn.BackgroundTransparency = 1.000
+AgilityBtn.Position = UDim2.new(0, 0, 0.632911384, 0)
+AgilityBtn.Size = UDim2.new(0, 284, 0, 50)
+AgilityBtn.Font = Enum.Font.Fondamento
+AgilityBtn.Text = "Agility"
+AgilityBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+AgilityBtn.TextSize = 34.000
+
+SwiftnessLocationTypesFrame.Name = "SwiftnessLocationTypesFrame"
+SwiftnessLocationTypesFrame.Parent = TrainingFrames
+SwiftnessLocationTypesFrame.Active = true
+SwiftnessLocationTypesFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SwiftnessLocationTypesFrame.BackgroundTransparency = 1.000
+SwiftnessLocationTypesFrame.Position = UDim2.new(0.5, 0, 0.235555559, 0)
+SwiftnessLocationTypesFrame.Size = UDim2.new(0, 310, 0, 316)
+SwiftnessLocationTypesFrame.Visible = false
+
+TreadmillBtn.Name = "TreadmillBtn"
+TreadmillBtn.Parent = SwiftnessLocationTypesFrame
+TreadmillBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TreadmillBtn.BackgroundTransparency = 1.000
+TreadmillBtn.Size = UDim2.new(0, 284, 0, 50)
+TreadmillBtn.Font = Enum.Font.Fondamento
+TreadmillBtn.Text = "Treadmill (Req. 0)"
+TreadmillBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+TreadmillBtn.TextSize = 34.000
+
+ChestFrame.Name = "ChestFrame"
+ChestFrame.Parent = ImgBG
+ChestFrame.Active = true
+ChestFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChestFrame.BackgroundTransparency = 1.000
+ChestFrame.Position = UDim2.new(0.494753152, 0, 0.235555559, 0)
+ChestFrame.Size = UDim2.new(0, 313, 0, 302)
+ChestFrame.Visible = false
+
+DailyChestBtn.Name = "DailyChestBtn"
+DailyChestBtn.Parent = ChestFrame
+DailyChestBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DailyChestBtn.BackgroundTransparency = 1.000
+DailyChestBtn.Position = UDim2.new(0.0543952808, 0, -0.00319352746, 0)
+DailyChestBtn.Size = UDim2.new(0, 296, 0, 50)
+DailyChestBtn.Font = Enum.Font.Fondamento
+DailyChestBtn.Text = "Daily Chest"
+DailyChestBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+DailyChestBtn.TextSize = 34.000
+
+GroupChestBtn.Name = "GroupChestBtn"
+GroupChestBtn.Parent = ChestFrame
+GroupChestBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GroupChestBtn.BackgroundTransparency = 1.000
+GroupChestBtn.Position = UDim2.new(0.0543952808, 0, 0.162369385, 0)
+GroupChestBtn.Size = UDim2.new(0, 296, 0, 50)
+GroupChestBtn.Font = Enum.Font.Fondamento
+GroupChestBtn.Text = "Group Chest"
+GroupChestBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+GroupChestBtn.TextSize = 34.000
+
+CaveChestBtn.Name = "CaveChestBtn"
+CaveChestBtn.Parent = ChestFrame
+CaveChestBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CaveChestBtn.BackgroundTransparency = 1.000
+CaveChestBtn.Position = UDim2.new(0.0543952808, 0, 0.331243575, 0)
+CaveChestBtn.Size = UDim2.new(0, 296, 0, 50)
+CaveChestBtn.Font = Enum.Font.Fondamento
+CaveChestBtn.Text = "Cave Chest (Secret)"
+CaveChestBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+CaveChestBtn.TextSize = 34.000
+
+InfoBtn.Name = "InfoBtn"
+InfoBtn.Parent = ImgBG
+InfoBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoBtn.BackgroundTransparency = 1.000
+InfoBtn.Position = UDim2.new(0.90322578, 0, 0.0355555564, 0)
+InfoBtn.Size = UDim2.new(0, 38, 0, 38)
+InfoBtn.Image = "rbxassetid://9100803110"
+
+InfoFrame.Name = "InfoFrame"
+InfoFrame.Parent = ImgBG
+InfoFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoFrame.Position = UDim2.new(0.0177419353, 0, 0.159999996, 0)
+InfoFrame.Size = UDim2.new(0, 597, 0, 366)
+InfoFrame.ZIndex = 3
+
+TextLabel.Parent = InfoFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Size = UDim2.new(0, 594, 0, 50)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Created by Dibb6020"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 34.000
+
+TextLabel_2.Parent = InfoFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(0, 0, 0.863388002, 0)
+TextLabel_2.Size = UDim2.new(0, 594, 0, 50)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "Proof to CharlieBob"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 34.000
+
+ImageLabel_2.Parent = InfoFrame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0, 0, 0.158469945, 0)
+ImageLabel_2.Size = UDim2.new(0, 390, 0, 252)
+ImageLabel_2.Image = "rbxassetid://9100891029"
+
+TextLabel_3.Parent = InfoFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.617500782, 0, 0.158469945, 0)
+TextLabel_3.Size = UDim2.new(0, 221, 0, 66)
+TextLabel_3.Visible = false
+TextLabel_3.Font = Enum.Font.SciFi
+TextLabel_3.Text = "Left Alt to "
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 34.000
+
+TextLabel_4.Parent = InfoFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.617500782, 0, 0.300546438, 0)
+TextLabel_4.Size = UDim2.new(0, 221, 0, 48)
+TextLabel_4.Visible = false
+TextLabel_4.Font = Enum.Font.SciFi
+TextLabel_4.Text = "show/hide GUI"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 34.000
+
+-- Scripts:
+
+local function BLEJHKL_fake_script() -- StrengthToggleBtn.AutoStrengthScript 
+	local script = Instance.new('LocalScript', StrengthToggleBtn)
+
+	script.Parent.MouseButton1Click:connect(function(player)
+	
+		if script.Parent.Parent.StrengthToggleBtn.Image == "rbxassetid://9099770965" then
+			script.Parent.Parent.StrengthToggleBtn.Image = "rbxassetid://9099770863"
+			while script.Parent.Parent.StrengthToggleBtn.Image == "rbxassetid://9099770863" and wait() do
+				local string_1 = "Strength";
+				local Target = game:GetService("ReplicatedStorage").Systems.Training.ActivateTool;
+				Target:FireServer(string_1);
+				local string_2 = "EnduranceEquip";
+				local Target = game:GetService("ReplicatedStorage").Systems.Training.ActivateTool;
+				Target:FireServer(string_2);
+			end
+		else
+			script.Parent.Parent.StrengthToggleBtn.Image ="rbxassetid://9099770965"
+		end
+	
+	
+	end)
+	
+end
+coroutine.wrap(BLEJHKL_fake_script)()
+local function PMYK_fake_script() -- AutoAgilityToggleBtn.AutoAgilityScript 
+	local script = Instance.new('LocalScript', AutoAgilityToggleBtn)
+
+	local vim = game:service'VirtualInputManager'
+	script.Parent.MouseButton1Click:connect(function(player)
+		
+		if script.Parent.Parent.AutoAgilityToggleBtn.Image == "rbxassetid://9099770965" then
+			script.Parent.Parent.AutoAgilityToggleBtn.Image = "rbxassetid://9099770863"
+			while script.Parent.Parent.AutoAgilityToggleBtn.Image == "rbxassetid://9099770863" and wait() do
+				--wait(2)
+				vim:SendKeyEvent(true, "Space", false, game)
+				end
+		else
+			script.Parent.Parent.AutoAgilityToggleBtn.Image ="rbxassetid://9099770965"
+			
+		end
+	
+	
+	end)
+	
+end
+coroutine.wrap(PMYK_fake_script)()
+local function JJTOKWB_fake_script() -- SuperBoyBtn.LocalScript 
+	local script = Instance.new('LocalScript', SuperBoyBtn)
+
+	script.Parent.Parent.SuperBoyBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(638.3599853515625, 122.87705993652344, -2351.38525390625)
+	end)
+	
+end
+coroutine.wrap(JJTOKWB_fake_script)()
+local function GGHN_fake_script() -- TempestBtn.LocalScript 
+	local script = Instance.new('LocalScript', TempestBtn)
+
+	script.Parent.Parent.TempestBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(49.97657775878906, 225.23284912109375, -2913.5615234375)
+	end)
+	
+end
+coroutine.wrap(GGHN_fake_script)()
+local function RGDDC_fake_script() -- ScorchBtn.LocalScript 
+	local script = Instance.new('LocalScript', ScorchBtn)
+
+	script.Parent.Parent.ScorchBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(751.1278076171875, 101.69227600097656, -554.6211547851562)
+	end)
+	
+end
+coroutine.wrap(RGDDC_fake_script)()
+local function QTLED_fake_script() -- CrystalBtn.LocalScript 
+	local script = Instance.new('LocalScript', CrystalBtn)
+
+	script.Parent.Parent.CrystalBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-1398.9906005859375, 144.1564178466797, -3276.961181640625)
+	end)
+	
+end
+coroutine.wrap(QTLED_fake_script)()
+local function DZFHU_fake_script() -- ImpulseBtn.LocalScript 
+	local script = Instance.new('LocalScript', ImpulseBtn)
+
+	script.Parent.Parent.ImpulseBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-2440.375732421875, 101.64228820800781, -2968.079345703125)
+	end)
+	
+end
+coroutine.wrap(DZFHU_fake_script)()
+local function XJNO_fake_script() -- FarmerJoeBtn.LocalScript 
+	local script = Instance.new('LocalScript', FarmerJoeBtn)
+
+	script.Parent.Parent.FarmerJoeBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(692.1021118164062, 101.58549499511719, -1145.8887939453125)
+	end)
+	
+end
+coroutine.wrap(XJNO_fake_script)()
+local function TDZGBV_fake_script() -- EthanCaveBtn.LocalScript 
+	local script = Instance.new('LocalScript', EthanCaveBtn)
+
+	script.Parent.Parent.EthanCaveBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-244.08375549316406, 93.63644409179688, -622.11962890625)
+	end)
+	
+end
+coroutine.wrap(TDZGBV_fake_script)()
+local function SSRV_fake_script() -- FlyToggleBtn.LocalScript 
+	local script = Instance.new('LocalScript', FlyToggleBtn)
+
+	script.Parent.MouseButton1Click:connect(function(player)
+		
+		if script.Parent.Parent.FlyToggleBtn.Image == "rbxassetid://9099770965" then
+			script.Parent.Parent.FlyToggleBtn.Image = "rbxassetid://9099770863"
+			while script.Parent.Parent.FlyToggleBtn.Image == "rbxassetid://9099770863" and wait() do
+				print("Fly Enabled")
+				local l__LocalPlayer__1 = game:GetService("Players").LocalPlayer;
+				local l__mouse__2 = l__LocalPlayer__1:GetMouse();
+				local l__Character__3 = l__LocalPlayer__1.Character;
+				while true do
+					wait();
+					if l__Character__3 then
+						break;
+					end;
+				end;
+				local l__UserInputService__1 = game:GetService("UserInputService");
+				local u2 = { Enum.KeyCode.W, Enum.KeyCode.A, Enum.KeyCode.S, Enum.KeyCode.D };
+				local l__FlyRemotes__3 = game:GetService("ReplicatedStorage").Events.RemoteEvents.FlyRemotes;
+				local u4 = tick();
+				local l__CurrentCamera__5 = workspace.CurrentCamera;
+				l__FlyRemotes__3.Sound.OnClientEvent:Connect(function(p1)
+					p1.RollOffMaxDistance = math.huge;
+					p1.RollOffMinDistance = 0;
+					p1:Play();
+				end);
+				l__FlyRemotes__3.GetCam.OnClientInvoke = function()
+					return l__CurrentCamera__5.CFrame;
+				end;
+				l__UserInputService__1.InputBegan:Connect(function(p2)
+					local v4 = nil;
+					v4 = p2.KeyCode;
+					if l__UserInputService__1:GetFocusedTextBox() or not table.find(u2, v4) then
+						return;
+					end;
+					l__FlyRemotes__3.Move:FireServer(v4);
+				end);
+				l__UserInputService__1.InputEnded:Connect(function(p3)
+					local v5 = nil;
+					v5 = p3.KeyCode;
+					if l__UserInputService__1:GetFocusedTextBox() or not table.find(u2, v5) then
+						return;
+					end;
+					l__FlyRemotes__3.Stop:FireServer(v5);
+				end);
+				l__UserInputService__1.InputBegan:Connect(function(p4)
+					if l__UserInputService__1:GetFocusedTextBox() or p4.KeyCode ~= Enum.KeyCode.Space then
+						return;
+					end;
+					if tick() - u4 <= 0.5 and not l__LocalPlayer__1.Fly.Value then
+						l__FlyRemotes__3.Fly:FireServer();
+					elseif l__LocalPlayer__1.Fly.Value then
+						l__FlyRemotes__3.Fly:FireServer();
+					end;
+					u4 = tick();
+				end);
+				l__mouse__2.Button2Down:Connect(function()
+					l__FlyRemotes__3.Spin:FireServer(true);
+				end);
+				l__mouse__2.Button2Up:Connect(function()
+					l__FlyRemotes__3.Spin:FireServer(false);
+				end);
+			end
+		else
+			script.Parent.Parent.FlyToggleBtn.Image ="rbxassetid://9099770965"
+			end
+	
+	
+	end)
+end
+coroutine.wrap(SSRV_fake_script)()
+local function GOGU_fake_script() -- AutoTrainBtn.AutoTrainVFScript 
+	local script = Instance.new('LocalScript', AutoTrainBtn)
+
+	local frame = script.Parent.Parent
+	
+	script.Parent.Parent.AutoTrainBtn.MouseButton1Click:Connect(function()
+		frame.AutoTrainFrame.Visible = not frame.AutoTrainFrame.Visible
+		frame.ChestFrame.Visible = false
+		frame.QuestsSFrame.Visible = false
+		frame.TrainingFrames.TrainingLocationTypesFrame.Visible = false
+		
+	
+		frame.TrainingFrames.AgilityLocationTypesFrame.Visible = false
+		frame.TrainingFrames.EnduranceLocationsSFrame.Visible = false
+		frame.TrainingFrames.PsychicLocationsSFrame.Visible = false
+		frame.TrainingFrames.StrengthLocationsSFrame.Visible = false
+		frame.TrainingFrames.SwiftnessLocationTypesFrame.Visible = false
+	
+	end)
+	
+	
+	
+end
+coroutine.wrap(GOGU_fake_script)()
+local function TEKRLU_fake_script() -- ChestsBtn.ChestFVScript 
+	local script = Instance.new('LocalScript', ChestsBtn)
+
+	local frame = script.Parent.Parent
+	
+	script.Parent.Parent.ChestsBtn.MouseButton1Click:Connect(function()
+	frame.ChestFrame.Visible = not frame.ChestFrame.Visible
+		frame.AutoTrainFrame.Visible = false
+		frame.QuestsSFrame.Visible = false
+		frame.TrainingFrames.TrainingLocationTypesFrame.Visible = false
+		
+	
+		frame.TrainingFrames.AgilityLocationTypesFrame.Visible = false
+		frame.TrainingFrames.EnduranceLocationsSFrame.Visible = false
+		frame.TrainingFrames.PsychicLocationsSFrame.Visible = false
+		frame.TrainingFrames.StrengthLocationsSFrame.Visible = false
+		frame.TrainingFrames.SwiftnessLocationTypesFrame.Visible = false
+	
+	end)
+end
+coroutine.wrap(TEKRLU_fake_script)()
+local function ODMWX_fake_script() -- NPCBtn.NPCFVScript 
+	local script = Instance.new('LocalScript', NPCBtn)
+
+	local frame = script.Parent.Parent
+	
+	script.Parent.Parent.NPCBtn.MouseButton1Click:Connect(function()
+		frame.QuestsSFrame.Visible = not frame.QuestsSFrame.Visible
+		frame.AutoTrainFrame.Visible = false
+		frame.ChestFrame.Visible = false
+		frame.TrainingFrames.TrainingLocationTypesFrame.Visible = false
+		
+	
+		frame.TrainingFrames.AgilityLocationTypesFrame.Visible = false
+		frame.TrainingFrames.EnduranceLocationsSFrame.Visible = false
+		frame.TrainingFrames.PsychicLocationsSFrame.Visible = false
+		frame.TrainingFrames.StrengthLocationsSFrame.Visible = false
+		frame.TrainingFrames.SwiftnessLocationTypesFrame.Visible = false
+	
+	end)
+	
+end
+coroutine.wrap(ODMWX_fake_script)()
+local function MFVPQU_fake_script() -- SafeZoneBtn.LocalScript 
+	local script = Instance.new('LocalScript', SafeZoneBtn)
+
+	script.Parent.Parent.SafeZoneBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(638.7689208984375, 113.70507049560547, -2496.437744140625)
+	end)
+	
+end
+coroutine.wrap(MFVPQU_fake_script)()
+local function CDOKR_fake_script() -- TrainingLocationsBtn.TrainingVFScript 
+	local script = Instance.new('LocalScript', TrainingLocationsBtn)
+
+	local frame = script.Parent.Parent
+	
+	script.Parent.Parent.TrainingLocationsBtn.MouseButton1Click:Connect(function()
+		frame.TrainingFrames.TrainingLocationTypesFrame.Visible = not frame.TrainingFrames.TrainingLocationTypesFrame.Visible
+		
+		frame.AutoTrainFrame.Visible = false
+		frame.ChestFrame.Visible = false
+		frame.QuestsSFrame.Visible = false
+		
+		frame.TrainingFrames.AgilityLocationTypesFrame.Visible = false
+		frame.TrainingFrames.EnduranceLocationsSFrame.Visible = false
+		frame.TrainingFrames.PsychicLocationsSFrame.Visible = false
+		frame.TrainingFrames.StrengthLocationsSFrame.Visible = false
+		frame.TrainingFrames.SwiftnessLocationTypesFrame.Visible = false
+	
+	end)
+	
+end
+coroutine.wrap(CDOKR_fake_script)()
+local function ECOSCGF_fake_script() -- LibraryBtn.LocalScript 
+	local script = Instance.new('LocalScript', LibraryBtn)
+
+	script.Parent.Parent.LibraryBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-174.17222595214844, 109.35940551757812, -2518.697021484375)
+	end)
+	
+end
+coroutine.wrap(ECOSCGF_fake_script)()
+local function XZQAS_fake_script() -- CampFireBtn.LocalScript 
+	local script = Instance.new('LocalScript', CampFireBtn)
+
+	script.Parent.Parent.CampFireBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-2448.311279296875, 106.28901672363281, -3376.132080078125)
+	end)
+	
+end
+coroutine.wrap(XZQAS_fake_script)()
+local function HDOTPO_fake_script() -- WisdomTree2Btn.LocalScript 
+	local script = Instance.new('LocalScript', WisdomTree2Btn)
+
+	script.Parent.Parent.WisdomTree2Btn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-1235.2464599609375, 94.47525787353516, -299.7256164550781)
+	end)
+	
+end
+coroutine.wrap(HDOTPO_fake_script)()
+local function SIAN_fake_script() -- WisdomTreeBtn.LocalScript 
+	local script = Instance.new('LocalScript', WisdomTreeBtn)
+
+	script.Parent.Parent.WisdomTreeBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(887.2648315429688, 106.88714599609375, -2497.385986328125)
+	end)
+	
+end
+coroutine.wrap(SIAN_fake_script)()
+local function FDWAPNM_fake_script() -- LightHouseBtn.LocalScript 
+	local script = Instance.new('LocalScript', LightHouseBtn)
+
+	script.Parent.Parent.LightHouseBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-1123.833740234375, 179.58868408203125, -3518.386962890625)
+	end)
+	
+end
+coroutine.wrap(FDWAPNM_fake_script)()
+local function ADEX_fake_script() -- FountainBtn.LocalScript 
+	local script = Instance.new('LocalScript', FountainBtn)
+
+	script.Parent.Parent.FountainBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(31.61250114440918, 114.50269317626953, -3216.76416015625)
+	end)
+	
+end
+coroutine.wrap(ADEX_fake_script)()
+local function YVAEUGQ_fake_script() -- WaterfallBtn.LocalScript 
+	local script = Instance.new('LocalScript', WaterfallBtn)
+
+	script.Parent.Parent.WaterfallBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-1677.0050048828125, 51.636375427246094, -1635.0201416015625)
+	end)
+	
+end
+coroutine.wrap(YVAEUGQ_fake_script)()
+local function TVAM_fake_script() -- RockBtn.LocalScript 
+	local script = Instance.new('LocalScript', RockBtn)
+
+	script.Parent.Parent.RockBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(465.9754638671875, 117.21556854248047, -2507.990234375)
+	end)
+	
+end
+coroutine.wrap(TVAM_fake_script)()
+local function JLCJQ_fake_script() -- Meteor1Btn.LocalScript 
+	local script = Instance.new('LocalScript', Meteor1Btn)
+
+	script.Parent.Parent.Meteor1Btn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(1377.42822265625, 122.03971099853516, -976.5928344726562)
+	end)
+	
+end
+coroutine.wrap(JLCJQ_fake_script)()
+local function PZTXEZ_fake_script() -- Meteor2Btn.LocalScript 
+	local script = Instance.new('LocalScript', Meteor2Btn)
+
+	script.Parent.Parent.Meteor2Btn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-247.71499633789062, 122.75530242919922, -1543.7021484375)
+	end)
+	
+end
+coroutine.wrap(PZTXEZ_fake_script)()
+local function CVTZLSC_fake_script() -- CrystalsBtn.LocalScript 
+	local script = Instance.new('LocalScript', CrystalsBtn)
+
+	script.Parent.Parent.CrystalsBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(755.3291015625, 136.6249237060547, -2917.9931640625)
+	end)
+	
+end
+coroutine.wrap(CVTZLSC_fake_script)()
+local function XIKKL_fake_script() -- FerrisWheelBtn.LocalScript 
+	local script = Instance.new('LocalScript', FerrisWheelBtn)
+
+	script.Parent.Parent.FerrisWheelBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(4.640412330627441, 108.62921905517578, -3544.0244140625)
+	end)
+	
+end
+coroutine.wrap(XIKKL_fake_script)()
+local function JLZS_fake_script() -- VanBtn.LocalScript 
+	local script = Instance.new('LocalScript', VanBtn)
+
+	script.Parent.Parent.VanBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-665.8040161132812, 112.58688354492188, -3084.292236328125)
+	end)
+	
+end
+coroutine.wrap(JLZS_fake_script)()
+local function BVAT_fake_script() -- EnchantedCrystalBtn.LocalScript 
+	local script = Instance.new('LocalScript', EnchantedCrystalBtn)
+
+	script.Parent.Parent.EnchantedCrystalBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-1890.7156982421875, 108.51382446289062, -3536.819091796875)
+	end)
+	
+end
+coroutine.wrap(BVAT_fake_script)()
+local function HWZUTF_fake_script() -- SatelliteBtn.LocalScript 
+	local script = Instance.new('LocalScript', SatelliteBtn)
+
+	script.Parent.Parent.SatelliteBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(157.52687072753906, 1752.5477294921875, -3058.34375)
+	end)
+	
+end
+coroutine.wrap(HWZUTF_fake_script)()
+local function IRPWYSV_fake_script() -- CraneBtn.LocalScript 
+	local script = Instance.new('LocalScript', CraneBtn)
+
+	script.Parent.Parent.CraneBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-2143.077880859375, 101.94239044189453, -2524.0361328125)
+		end)
+end
+coroutine.wrap(IRPWYSV_fake_script)()
+local function YPEGYL_fake_script() -- GrandHammerBtn.LocalScript 
+	local script = Instance.new('LocalScript', GrandHammerBtn)
+
+	script.Parent.Parent.GrandHammerBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-1089.107666015625, 94.48798370361328, -2001.7626953125)
+	end)
+	
+end
+coroutine.wrap(YPEGYL_fake_script)()
+local function AEDHKUJ_fake_script() -- RadioactiveMeteorBtn.LocalScript 
+	local script = Instance.new('LocalScript', RadioactiveMeteorBtn)
+
+	script.Parent.Parent.RadioactiveMeteorBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(635.9267578125, 122.08814239501953, -1332.2249755859375)
+	end)
+	
+	
+end
+coroutine.wrap(AEDHKUJ_fake_script)()
+local function CFAH_fake_script() -- SharksBtn.LocalScript 
+	local script = Instance.new('LocalScript', SharksBtn)
+
+	script.Parent.Parent.SharksBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(120.31854248046875, 51.195533752441406, -4107.99853515625)
+	end)
+	
+end
+coroutine.wrap(CFAH_fake_script)()
+local function TXKGGT_fake_script() -- SmokePipesBtn.LocalScript 
+	local script = Instance.new('LocalScript', SmokePipesBtn)
+
+	script.Parent.Parent.SmokePipesBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-2077.947021484375, 236.74671936035156, -2844.878662109375)
+	end)
+	
+end
+coroutine.wrap(TXKGGT_fake_script)()
+local function KRVOK_fake_script() -- MoltenPoolBtn.LocalScript 
+	local script = Instance.new('LocalScript', MoltenPoolBtn)
+
+	script.Parent.Parent.MoltenPoolBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-2158.661376953125, 112.56922149658203, -2856.004150390625)
+	end)
+	
+end
+coroutine.wrap(KRVOK_fake_script)()
+local function HWCNU_fake_script() -- RockBtn_2.LocalScript 
+	local script = Instance.new('LocalScript', RockBtn_2)
+
+	script.Parent.Parent.RockBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(771.0111083984375, 113.155029296875, -3285.97998046875)
+	end)
+	
+	
+end
+coroutine.wrap(HWCNU_fake_script)()
+local function MCGYNP_fake_script() -- AncientPillarsBtn.LocalScript 
+	local script = Instance.new('LocalScript', AncientPillarsBtn)
+
+	script.Parent.Parent.AncientPillarsBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-1752.0872802734375, 66.23896789550781, -1166.041748046875)
+	end)
+	
+end
+coroutine.wrap(MCGYNP_fake_script)()
+local function AFCHB_fake_script() -- TrampolineBtn.LocalScript 
+	local script = Instance.new('LocalScript', TrampolineBtn)
+
+	script.Parent.Parent.TrampolineBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-327.58966064453125, 105.11963653564453, -2990.051513671875)
+		end)
+end
+coroutine.wrap(AFCHB_fake_script)()
+local function KWOM_fake_script() -- VentsBtn.LocalScript 
+	local script = Instance.new('LocalScript', VentsBtn)
+
+	script.Parent.Parent.VentsBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-1546.6649169921875, 177.9237060546875, -2611.4033203125)
+	end)
+end
+coroutine.wrap(KWOM_fake_script)()
+local function NWDJ_fake_script() -- StrengthBtn.StrengthVFScript 
+	local script = Instance.new('LocalScript', StrengthBtn)
+
+	local frame = script.Parent.Parent.Parent.StrengthLocationsSFrame
+	local Previousframe = script.Parent.Parent.Parent.TrainingLocationTypesFrame
+	script.Parent.Parent.StrengthBtn.MouseButton1Click:Connect(function()
+	
+		frame.Visible = not frame.Visible
+		Previousframe.Visible = false
+	
+	end)
+end
+coroutine.wrap(NWDJ_fake_script)()
+local function TYGXC_fake_script() -- EnduranceBtn.EnduranceVFScript 
+	local script = Instance.new('LocalScript', EnduranceBtn)
+
+	local frame = script.Parent.Parent.Parent.EnduranceLocationsSFrame
+	local Previousframe = script.Parent.Parent.Parent.TrainingLocationTypesFrame
+	script.Parent.Parent.EnduranceBtn.MouseButton1Click:Connect(function()
+	
+		frame.Visible = not frame.Visible
+		Previousframe.Visible = false
+	
+	end)
+end
+coroutine.wrap(TYGXC_fake_script)()
+local function WJXK_fake_script() -- PsychicForceBtn.PsychicVFScript 
+	local script = Instance.new('LocalScript', PsychicForceBtn)
+
+	local frame = script.Parent.Parent.Parent.PsychicLocationsSFrame
+	local Previousframe = script.Parent.Parent.Parent.TrainingLocationTypesFrame
+	script.Parent.Parent.PsychicForceBtn.MouseButton1Click:Connect(function()
+	
+		frame.Visible = not frame.Visible
+		Previousframe.Visible = false
+	
+	end)
+end
+coroutine.wrap(WJXK_fake_script)()
+local function NWMQ_fake_script() -- SwiftnessBtn.SwiftnessVFScript 
+	local script = Instance.new('LocalScript', SwiftnessBtn)
+
+	local frame = script.Parent.Parent.Parent.SwiftnessLocationTypesFrame
+	local Previousframe = script.Parent.Parent.Parent.TrainingLocationTypesFrame
+	script.Parent.Parent.SwiftnessBtn.MouseButton1Click:Connect(function()
+	
+		frame.Visible = not frame.Visible
+		Previousframe.Visible = false
+	
+	end)
+end
+coroutine.wrap(NWMQ_fake_script)()
+local function DQSKX_fake_script() -- AgilityBtn.AgilityVFScript 
+	local script = Instance.new('LocalScript', AgilityBtn)
+
+	local frame = script.Parent.Parent.Parent.AgilityLocationTypesFrame
+	local Previousframe = script.Parent.Parent.Parent.TrainingLocationTypesFrame
+	script.Parent.Parent.AgilityBtn.MouseButton1Click:Connect(function()
+	
+		frame.Visible = not frame.Visible
+		Previousframe.Visible = false
+	
+	end)
+end
+coroutine.wrap(DQSKX_fake_script)()
+local function TIDHC_fake_script() -- TreadmillBtn.LocalScript 
+	local script = Instance.new('LocalScript', TreadmillBtn)
+
+	script.Parent.Parent.TreadmillBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(715.97021484375, 113.76260375976562, -2396.276611328125)
+	end)
+	
+end
+coroutine.wrap(TIDHC_fake_script)()
+local function ADHUQAF_fake_script() -- DailyChestBtn.LocalScript 
+	local script = Instance.new('LocalScript', DailyChestBtn)
+
+	script.Parent.Parent.DailyChestBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(570.403564453125, 113.7039794921875, -2385.260009765625)
+	end)
+	
+end
+coroutine.wrap(ADHUQAF_fake_script)()
+local function CIIVDZO_fake_script() -- GroupChestBtn.LocalScript 
+	local script = Instance.new('LocalScript', GroupChestBtn)
+
+	script.Parent.Parent.GroupChestBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(568.670654296875, 113.7042236328125, -2407.650146484375)
+	end)
+	
+end
+coroutine.wrap(CIIVDZO_fake_script)()
+local function SVCSS_fake_script() -- CaveChestBtn.LocalScript 
+	local script = Instance.new('LocalScript', CaveChestBtn)
+
+	script.Parent.Parent.CaveChestBtn.MouseButton1Click:Connect(function()
+		local a = game.Players.LocalPlayer.Character.HumanoidRootPart
+		a.CFrame = CFrame.new(-280.950439453125, 92.31498718261719, -689.3280029296875)
+	end)
+	
+end
+coroutine.wrap(SVCSS_fake_script)()
+local function VVOOQ_fake_script() -- ImgBG.DragableGUI 
+	local script = Instance.new('LocalScript', ImgBG)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(VVOOQ_fake_script)()
+local function FHMD_fake_script() -- InfoBtn.LocalScript 
+	local script = Instance.new('LocalScript', InfoBtn)
+
+	script.Parent.Parent.InfoBtn.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.InfoFrame.Visible == false then
+			script.Parent.Parent.InfoFrame.Visible = true
+		else
+			script.Parent.Parent.InfoFrame.Visible = false
+		end
+		
+	end)
+	
+end
+coroutine.wrap(FHMD_fake_script)()
+local function AXBZDVK_fake_script() -- ImgBG.HideGUI 
+	local script = Instance.new('LocalScript', ImgBG)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse()().KeyDown:Connect(function(E)
+		if E == "E" then
+			 script.Parent.Parent.ImgBG.Visible = false 
+		end
+	end)
+	
+	
+	
+	
+end
+coroutine.wrap(AXBZDVK_fake_script)()
+
